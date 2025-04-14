@@ -3,6 +3,7 @@ import pandas as pd
 from extract import extract_data
 import requests
 
+
 def transform_data(dataframe):
     try:
         if dataframe:
@@ -10,17 +11,14 @@ def transform_data(dataframe):
             df['name'] = df['name'].str.strip()
             df['date_utc'] = pd.to_datetime(df['date_utc'])
             df['success'] = df['success'].astype(bool)
+            df.columns = df.columns.str.replace('.', '_', regex=False)
             return df
     
         else:
-            logger.error('The dataframe is empty')
+            logger.warning('No data to transform.')
 
     except Exception as e:
-        logger.error('No data to transform.')
-
-
-url = 'https://api.spacexdata.com/v5/launches'
-data = transform_data(extract_data(url))
+        logger.error(f'Problem during data transformation: {e}')
 
 
 def fetch_name_detail(df, name, column_id, url):
@@ -31,7 +29,6 @@ def fetch_name_detail(df, name, column_id, url):
         try:
             nid = nid.strip()
             res = requests.get(f'{url}/{nid}')
-            print(res.json())
             res.raise_for_status()
             name_id_lookup[nid] = res.json().get(name, None)
         except Exception as e:
@@ -40,7 +37,3 @@ def fetch_name_detail(df, name, column_id, url):
 
     df[f'{column_id}_name'] = df[f'{column_id}'].map(name_id_lookup)
     return df
-
-
-trans_data = fetch_name_detail(data, 'name', 'rocket', 'https://api.spacexdata.com/v4/rockets')
-print(trans_data['rocket_name'].value_counts())
