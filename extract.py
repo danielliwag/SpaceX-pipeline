@@ -1,8 +1,6 @@
 import requests
 from config import logger
 
-url = 'https://api.spacexdata.com/v5/launches'
-
 
 def extract_data(url):
     logger.info('Extracting data from API')
@@ -12,3 +10,5 @@ def extract_data(url):
         return data
     except Exception as e:
         logger.error(f'Problem occured during data ingestion: {e}')
+
+    logger.info('Data ingestion successfully completed')
