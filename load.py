@@ -11,8 +11,9 @@ def load_data(dataframe, db_config):
                     dataframe[col] = dataframe[col].apply(json.dumps)
 
             engine = create_engine(f"postgresql://{db_config['user']}:{db_config['pass']}@{db_config['host']}:{db_config['port']}/{db_config['name']}")
-            dataframe.to_sql('spacex_data', engine, if_exists ='replace', index= False)
+            dataframe.to_sql('spacex_launches', engine, if_exists ='replace', index= False)
         except Exception as e:
             logger.error(f'Problem occured during data loading. {e}')
     else:
         logger.warning('No data to load.')
+    logger.info('Data is successfully loaded into the database.')

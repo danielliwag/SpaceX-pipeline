@@ -1,6 +1,5 @@
 from config import logger
 import pandas as pd
-from extract import extract_data
 import requests
 
 
@@ -8,11 +7,35 @@ def transform_data(dataframe):
     try:
         if dataframe:
             df = pd.json_normalize(dataframe)
+            df['launch_id'] = df['id']
             df['name'] = df['name'].str.strip()
             df['date_utc'] = pd.to_datetime(df['date_utc'])
             df['success'] = df['success'].astype(bool)
-            df.columns = df.columns.str.replace('.', '_', regex=False)
-            return df
+            df['links.flickr.original'] = df['links.flickr.original'].apply(lambda x: ', '.join(x))
+            df['capsules'] = df['capsules'].apply(lambda x: ', '.join(x))
+            df['payloads'] = df['payloads'].apply(lambda x: ', '.join(x))
+
+            cores_df = pd.json_normalize(dataframe, record_path='cores', meta= ['id'], sep='_')
+            cores_df['launch_id'] = cores_df['id']
+            cores_df.drop(columns=['id'], inplace= True)
+
+            failures_df = pd.json_normalize(dataframe, record_path='failures', meta=['id'], sep='_')
+            failures_df.rename(columns={'id': 'launch_id'}, inplace= True)
+
+            crew_records = []
+            for launch in dataframe:
+                if launch.get("crew"):
+                    for crew_id in launch["crew"]:
+                        crew_records.append({
+                            "launch_id": launch["id"],
+                            "crew_id": crew_id
+                        })
+            crew_df = pd.DataFrame(crew_records)
+            
+            merged_df = pd.merge(df, cores_df, on='launch_id', how='left')
+            merged_df = pd.merge(merged_df, failures_df, on='launch_id', how='left')
+            merged_df = pd.merge(merged_df, crew_df, on='launch_id', how='left')
+            return merged_df
     
         else:
             logger.warning('No data to transform.')

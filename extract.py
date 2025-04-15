@@ -11,4 +11,4 @@ def extract_data(url):
     except Exception as e:
         logger.error(f'Problem occured during data ingestion: {e}')
 
-    logger.info('Data ingestion successfully completed')
+    finally: logger.info('Data ingestion successfully completed')
