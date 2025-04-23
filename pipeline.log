@@ -895,3 +895,388 @@
 2025-04-15 17:41:43,651 - INFO - Loading the dataframe to the database.
 2025-04-15 17:41:43,907 - INFO - Data is successfully loaded into the database.
 2025-04-15 17:41:43,908 - INFO - ETL Job finished
+2025-04-16 16:04:17,260 - INFO - ETL Job Starting
+2025-04-16 16:04:17,260 - INFO - Extracting data from API
+2025-04-16 16:04:17,263 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-16 16:04:18,455 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-16 16:04:18,899 - INFO - Data ingestion successfully completed
+2025-04-16 16:04:18,922 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-16 16:04:19,670 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69955f709d1eb HTTP/1.1" 200 831
+2025-04-16 16:04:19,676 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-16 16:04:20,446 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-16 16:04:20,452 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-16 16:04:21,218 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69974db09d1ed HTTP/1.1" 200 1055
+2025-04-16 16:04:21,226 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-16 16:04:21,552 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads/5e9e4502f5090995de566f86 HTTP/1.1" 200 521
+2025-04-16 16:04:21,557 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-16 16:04:22,336 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads/5e9e4501f509094ba4566f84 HTTP/1.1" 200 1330
+2025-04-16 16:04:22,338 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-16 16:04:23,111 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads/5e9e4502f509092b78566f87 HTTP/1.1" 200 940
+2025-04-16 16:04:23,113 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-16 16:04:23,887 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads/5e9e4502f509094188566f88 HTTP/1.1" 200 1331
+2025-04-16 16:04:23,890 - INFO - Loading the dataframe to the database.
+2025-04-16 16:04:24,235 - INFO - Data is successfully loaded into the database.
+2025-04-16 16:04:24,235 - INFO - ETL Job finished
+2025-04-16 16:05:04,529 - INFO - ETL Job Starting
+2025-04-16 16:05:04,529 - INFO - Extracting data from API
+2025-04-16 16:05:04,531 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-16 16:05:05,446 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-16 16:05:05,886 - INFO - Data ingestion successfully completed
+2025-04-16 16:05:05,908 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-16 16:05:06,700 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69955f709d1eb HTTP/1.1" 200 831
+2025-04-16 16:05:06,705 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-16 16:05:07,460 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-16 16:05:07,461 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-16 16:05:08,237 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69974db09d1ed HTTP/1.1" 200 1055
+2025-04-16 16:05:08,240 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-16 16:05:09,021 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads/5e9e4502f5090995de566f86 HTTP/1.1" 200 521
+2025-04-16 16:05:09,023 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-16 16:05:09,352 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads/5e9e4501f509094ba4566f84 HTTP/1.1" 200 1330
+2025-04-16 16:05:09,358 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-16 16:05:09,707 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads/5e9e4502f509092b78566f87 HTTP/1.1" 200 940
+2025-04-16 16:05:09,712 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-16 16:05:10,485 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads/5e9e4502f509094188566f88 HTTP/1.1" 200 1331
+2025-04-16 16:05:10,487 - INFO - Loading the dataframe to the database.
+2025-04-16 16:05:10,751 - INFO - Data is successfully loaded into the database.
+2025-04-16 16:05:10,751 - INFO - ETL Job finished
+2025-04-23 16:04:34,822 - INFO - ETL Job Starting
+2025-04-23 16:04:34,822 - INFO - Extracting data from API
+2025-04-23 16:04:34,826 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:35,955 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-23 16:04:36,406 - INFO - Data ingestion successfully completed
+2025-04-23 16:04:36,414 - INFO - Cleaning and transforming launch data.
+2025-04-23 16:04:36,424 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:37,217 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69955f709d1eb HTTP/1.1" 200 831
+2025-04-23 16:04:37,219 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:38,030 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69955f709d1eb HTTP/1.1" 200 831
+2025-04-23 16:04:38,033 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:38,809 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69955f709d1eb HTTP/1.1" 200 831
+2025-04-23 16:04:38,812 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:39,584 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69955f709d1eb HTTP/1.1" 200 831
+2025-04-23 16:04:39,585 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:40,361 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69955f709d1eb HTTP/1.1" 200 831
+2025-04-23 16:04:40,363 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:41,146 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:41,152 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:41,894 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:41,896 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:42,682 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:42,688 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:43,489 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:43,492 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:44,269 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:44,274 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:45,046 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:45,051 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:45,819 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:45,824 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:46,621 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:46,623 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:47,429 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:47,431 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:48,223 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:48,225 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:48,985 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:48,987 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:49,773 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:49,774 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:50,571 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:50,573 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:50,917 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:50,919 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:51,690 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:51,696 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:52,038 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:52,040 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:52,785 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:52,790 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:53,122 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:53,127 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:53,923 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:53,927 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:54,750 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:54,751 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:55,520 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:55,522 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:56,326 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:56,332 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:57,108 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:57,112 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:57,873 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:57,875 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:58,676 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:58,680 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:04:59,465 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:04:59,467 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:00,236 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:00,238 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:00,996 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:00,998 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:01,319 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:01,320 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:02,111 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:02,112 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:02,452 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:02,457 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:03,221 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:03,223 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:03,556 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:03,561 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:04,346 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:04,348 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:04,694 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:04,697 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:05,026 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:05,031 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:05,828 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:05,829 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:06,577 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:06,581 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:07,408 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:07,410 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:08,177 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:08,180 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:08,959 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:08,961 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:09,787 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:09,790 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:10,620 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:10,622 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:10,969 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:10,976 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:11,759 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:11,762 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:12,531 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:12,532 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:12,863 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:12,865 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:13,179 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:13,181 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:13,948 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:13,951 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:14,273 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69974db09d1ed HTTP/1.1" 200 1055
+2025-04-23 16:05:14,275 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:15,014 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:15,020 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:15,789 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:15,791 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:16,592 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:16,598 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:16,935 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:16,937 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:17,717 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:17,719 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:18,488 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:18,491 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:18,818 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:18,820 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:19,162 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:19,168 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:19,529 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:19,531 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:20,325 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:20,331 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:20,675 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:20,678 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:21,010 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:21,015 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:21,348 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:21,353 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:21,692 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:21,694 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:22,025 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:22,029 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:22,825 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:22,830 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:23,594 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:23,596 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:24,368 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:24,369 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:25,134 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:25,136 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:25,903 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:25,909 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:26,663 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:26,668 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:27,475 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69974db09d1ed HTTP/1.1" 200 1055
+2025-04-23 16:05:27,478 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:05:28,244 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets/5e9d0d95eda69973a809d1ec HTTP/1.1" 200 993
+2025-04-23 16:05:28,249 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:22:10,268 - INFO - ETL Job Starting
+2025-04-23 16:22:10,268 - INFO - Extracting data from API
+2025-04-23 16:22:10,271 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:22:11,267 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-23 16:22:11,705 - INFO - Data ingestion successfully completed
+2025-04-23 16:22:11,712 - INFO - Cleaning and transforming launch data.
+2025-04-23 16:22:11,717 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:22:12,530 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-23 16:22:12,534 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:22:12,887 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-23 16:22:12,896 - INFO - Transformation complete.
+2025-04-23 16:22:12,896 - INFO - Loading the dataframe to the database.
+2025-04-23 16:22:13,209 - INFO - Data is successfully loaded into the database.
+2025-04-23 16:22:13,209 - INFO - ETL Job finished
+2025-04-23 16:22:42,845 - INFO - ETL Job Starting
+2025-04-23 16:22:42,845 - INFO - Extracting data from API
+2025-04-23 16:22:42,848 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:22:43,775 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-23 16:22:44,235 - INFO - Data ingestion successfully completed
+2025-04-23 16:22:44,241 - INFO - Cleaning and transforming launch data.
+2025-04-23 16:22:44,246 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:22:45,021 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-23 16:22:45,024 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 16:22:45,768 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-23 16:22:45,775 - INFO - Transformation complete.
+2025-04-23 16:22:45,775 - INFO - Loading the dataframe to the database.
+2025-04-23 16:22:45,981 - ERROR - Problem occured during data loading. (psycopg2.ProgrammingError) can't adapt type 'dict'
+[SQL: INSERT INTO spacex_launches (static_fire_date_utc, static_fire_date_unix, net, "window", success, failures, details, crew, ships, capsules, payloads, flight_number, name, date_utc, date_unix, date_local, date_precision, upcoming, cores, auto_update,  ... 200599 characters truncated ... 204)s, %(fairings__204)s, %(rocket_name__204)s, %(launchpad_location__204)s, %(flickr_images__204)s)]
+[parameters: {'date_precision__0': 'hour', 'name__0': 'FalconSat', 'launchpad_location__0': 'Kwajalein Atoll Omelek Island', 'links_webcast__0': 'https://www.youtube.com/watch?v=0a_00nJ_Y88', 'date_unix__0': 1143239400, 'rocket_name__0': 'Falcon 1', 'cores__0': [{'core': '5e9e289df35918033d3b2623', 'flight': 1, 'gridfins': False, 'legs': False, 'reused': False, 'landing_attempt': False, 'landing_success': None, 'landing_type': None, 'landpad': None}], 'links_reddit_launch__0': None, 'links_article__0': 'https://www.space.com/2196-spacex-inaugural-falcon-1-rocket-lost-launch.html', 'launch_library_id__0': None, 'id__0': '5eb87cd9ffd86e000604b32a', 'tbd__0': False, 'links_patch_small__0': 'https://images2.imgbox.com/94/f2/NN6Ph45r_o.png', 'capsules__0': [], 'date_utc__0': datetime.datetime(2006, 3, 24, 22, 30, tzinfo=datetime.timezone.utc), 'links_presskit__0': None, 'links_youtube_id__0': '0a_00nJ_Y88', 'fairings__0': None, 'payloads__0': ['5eb0e4b5b6c3bb0006eeb1e1'], 'links_flickr_small__0': [], 'details__0': 'Engine failure at 33 seconds and loss of vehicle', 'links_reddit_media__0': None, 'static_fire_date_utc__0': '2006-03-17T00:00:00.000Z', 'upcoming__0': False, 'fairings_ships__0': [], 'failures__0': [{'time': 33, 'altitude': None, 'reason': 'merlin engine failure'}], 'links_patch_large__0': 'https://images2.imgbox.com/5b/02/QcxHUb5V_o.png', 'static_fire_date_unix__0': 1142553600.0, 'fairings_recovery_attempt__0': False, 'net__0': False, 'flickr_images__0': '', 'crew__0': [], 'links_wikipedia__0': 'https://en.wikipedia.org/wiki/DemoSat', 'links_reddit_campaign__0': None, 'date_local__0': '2006-03-25T10:30:00+12:00', 'success__0': False, 'ships__0': [], 'fairings_reused__0': False, 'auto_update__0': True, 'window__0': 0.0, 'links_reddit_recovery__0': None, 'flight_number__0': 1, 'fairings_recovered__0': False, 'date_precision__1': 'hour', 'name__1': 'DemoSat', 'launchpad_location__1': 'Kwajalein Atoll Omelek Island', 'links_webcast__1': 'https://www.youtube.com/watch?v=Lk4zQ2wP-Nc', 'date_unix__1': 1174439400, 'rocket_name__1': 'Falcon 1', 'cores__1': [{'core': '5e9e289ef35918416a3b2624', 'flight': 1, 'gridfins': False, 'legs': False, 'reused': False, 'landing_attempt': False, 'landing_success': None, 'landing_type': None, 'landpad': None}] ... 8715 parameters truncated ... 'ships__203': [], 'fairings_reused__203': None, 'auto_update__203': True, 'window__203': None, 'links_reddit_recovery__203': None, 'flight_number__203': 202, 'fairings_recovered__203': None, 'date_precision__204': 'month', 'name__204': 'O3b mPower 3.4', 'launchpad_location__204': 'Cape Canaveral Space Force Station Space Launch Complex 40', 'links_webcast__204': None, 'date_unix__204': 1669852800, 'rocket_name__204': 'Falcon 9', 'cores__204': [{'core': None, 'flight': None, 'gridfins': None, 'legs': None, 'reused': None, 'landing_attempt': None, 'landing_success': None, 'landing_type': None, 'landpad': None}], 'links_reddit_launch__204': None, 'links_article__204': None, 'launch_library_id__204': None, 'id__204': '6243ae7daf52800c6e91925b', 'tbd__204': False, 'links_patch_small__204': None, 'capsules__204': [], 'date_utc__204': datetime.datetime(2022, 12, 1, 0, 0, tzinfo=datetime.timezone.utc), 'links_presskit__204': None, 'links_youtube_id__204': None, 'fairings__204': None, 'payloads__204': ['6243b788af52800c6e91926b'], 'links_flickr_small__204': [], 'details__204': None, 'links_reddit_media__204': None, 'static_fire_date_utc__204': None, 'upcoming__204': True, 'fairings_ships__204': [], 'failures__204': [], 'links_patch_large__204': None, 'static_fire_date_unix__204': None, 'fairings_recovery_attempt__204': None, 'net__204': False, 'flickr_images__204': '', 'crew__204': [], 'links_wikipedia__204': None, 'links_reddit_campaign__204': None, 'date_local__204': '2022-11-30T19:00:00-05:00', 'success__204': None, 'ships__204': [], 'fairings_reused__204': None, 'auto_update__204': True, 'window__204': None, 'links_reddit_recovery__204': None, 'flight_number__204': 203, 'fairings_recovered__204': None}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-23 16:22:45,982 - INFO - Data is successfully loaded into the database.
+2025-04-23 16:22:45,982 - INFO - ETL Job finished
+2025-04-23 17:25:57,427 - INFO - ETL Job Starting
+2025-04-23 17:25:57,427 - INFO - Extracting data from API
+2025-04-23 17:25:57,430 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 17:25:58,233 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-23 17:25:58,690 - INFO - Data ingestion successfully completed
+2025-04-23 17:25:58,695 - INFO - Cleaning and transforming launch data.
+2025-04-23 17:25:58,701 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 17:25:59,520 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-23 17:25:59,523 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 17:26:00,315 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-23 17:26:00,322 - ERROR - Error during transformation: sequence item 0: expected str instance, dict found
+2025-04-23 17:26:00,323 - INFO - Loading the dataframe to the database.
+2025-04-23 17:26:00,323 - WARNING - No data to load.
+2025-04-23 17:26:00,323 - INFO - ETL Job finished
+2025-04-23 17:27:23,667 - INFO - ETL Job Starting
+2025-04-23 17:27:23,667 - INFO - Extracting data from API
+2025-04-23 17:27:23,670 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 17:27:24,132 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-23 17:27:24,579 - INFO - Data ingestion successfully completed
+2025-04-23 17:27:24,584 - INFO - Cleaning and transforming launch data.
+2025-04-23 17:27:24,590 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 17:27:25,391 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-23 17:27:25,396 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 17:27:26,154 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-23 17:27:26,163 - ERROR - Error during transformation: sequence item 0: expected str instance, dict found
+2025-04-23 17:27:26,163 - INFO - Loading the dataframe to the database.
+2025-04-23 17:27:26,163 - WARNING - No data to load.
+2025-04-23 17:27:26,164 - INFO - ETL Job finished
+2025-04-23 17:31:18,672 - INFO - ETL Job Starting
+2025-04-23 17:31:18,672 - INFO - Extracting data from API
+2025-04-23 17:31:18,675 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 17:31:19,725 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-23 17:31:20,203 - INFO - Data ingestion successfully completed
+2025-04-23 17:31:20,209 - INFO - Cleaning and transforming launch data.
+2025-04-23 17:31:20,215 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 17:31:20,555 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-23 17:31:20,558 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 17:31:21,364 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-23 17:31:21,368 - INFO - Transformation complete.
+2025-04-23 17:31:21,368 - INFO - Loading the dataframe to the database.
+2025-04-23 17:31:21,601 - ERROR - Problem occured during data loading. (psycopg2.ProgrammingError) can't adapt type 'dict'
+[SQL: INSERT INTO spacex_launches (static_fire_date_utc, static_fire_date_unix, net, "window", success, failures, details, crew, ships, capsules, payloads, flight_number, name, date_utc, date_unix, date_local, date_precision, upcoming, auto_update, tbd, la ... 202867 characters truncated ... dia__204)s, %(fairings__204)s, %(rocket_name__204)s, %(launchpad_location__204)s, %(core_ids__204)s)]
+[parameters: {'links_flickr_original__0': [], 'fairings_reused__0': False, 'failures__0': [{'time': 33, 'altitude': None, 'reason': 'merlin engine failure'}], 'success__0': False, 'date_precision__0': 'hour', 'links_reddit_recovery__0': None, 'crew__0': [], 'upcoming__0': False, 'links_presskit__0': None, 'fairings__0': None, 'links_article__0': 'https://www.space.com/2196-spacex-inaugural-falcon-1-rocket-lost-launch.html', 'core_ids__0': '5e9e289df35918033d3b2623', 'ships__0': [], 'static_fire_date_unix__0': 1142553600.0, 'tbd__0': False, 'links_reddit_media__0': None, 'links_wikipedia__0': 'https://en.wikipedia.org/wiki/DemoSat', 'links_youtube_id__0': '0a_00nJ_Y88', 'date_utc__0': datetime.datetime(2006, 3, 24, 22, 30, tzinfo=datetime.timezone.utc), 'links_flickr_small__0': [], 'name__0': 'FalconSat', 'links_patch_large__0': 'https://images2.imgbox.com/5b/02/QcxHUb5V_o.png', 'rocket_name__0': 'Falcon 1', 'id__0': '5eb87cd9ffd86e000604b32a', 'launch_library_id__0': None, 'static_fire_date_utc__0': '2006-03-17T00:00:00.000Z', 'launchpad_location__0': 'Kwajalein Atoll Omelek Island', 'fairings_recovery_attempt__0': False, 'links_webcast__0': 'https://www.youtube.com/watch?v=0a_00nJ_Y88', 'flight_number__0': 1, 'payloads__0': ['5eb0e4b5b6c3bb0006eeb1e1'], 'auto_update__0': True, 'date_local__0': '2006-03-25T10:30:00+12:00', 'details__0': 'Engine failure at 33 seconds and loss of vehicle', 'net__0': False, 'links_reddit_campaign__0': None, 'capsules__0': [], 'window__0': 0.0, 'fairings_ships__0': [], 'date_unix__0': 1143239400, 'links_reddit_launch__0': None, 'links_patch_small__0': 'https://images2.imgbox.com/94/f2/NN6Ph45r_o.png', 'fairings_recovered__0': False, 'links_flickr_original__1': [], 'fairings_reused__1': False, 'failures__1': [{'time': 301, 'altitude': 289, 'reason': 'harmonic oscillation leading to premature engine shutdown'}], 'success__1': False, 'date_precision__1': 'hour', 'links_reddit_recovery__1': None, 'crew__1': [] ... 8715 parameters truncated ... 'capsules__203': [], 'window__203': None, 'fairings_ships__203': [], 'date_unix__203': 1669852800, 'links_reddit_launch__203': None, 'links_patch_small__203': None, 'fairings_recovered__203': None, 'links_flickr_original__204': [], 'fairings_reused__204': None, 'failures__204': [], 'success__204': None, 'date_precision__204': 'month', 'links_reddit_recovery__204': None, 'crew__204': [], 'upcoming__204': True, 'links_presskit__204': None, 'fairings__204': None, 'links_article__204': None, 'core_ids__204': '', 'ships__204': [], 'static_fire_date_unix__204': None, 'tbd__204': False, 'links_reddit_media__204': None, 'links_wikipedia__204': None, 'links_youtube_id__204': None, 'date_utc__204': datetime.datetime(2022, 12, 1, 0, 0, tzinfo=datetime.timezone.utc), 'links_flickr_small__204': [], 'name__204': 'O3b mPower 3.4', 'links_patch_large__204': None, 'rocket_name__204': 'Falcon 9', 'id__204': '6243ae7daf52800c6e91925b', 'launch_library_id__204': None, 'static_fire_date_utc__204': None, 'launchpad_location__204': 'Cape Canaveral Space Force Station Space Launch Complex 40', 'fairings_recovery_attempt__204': None, 'links_webcast__204': None, 'flight_number__204': 203, 'payloads__204': ['6243b788af52800c6e91926b'], 'auto_update__204': True, 'date_local__204': '2022-11-30T19:00:00-05:00', 'details__204': None, 'net__204': False, 'links_reddit_campaign__204': None, 'capsules__204': [], 'window__204': None, 'fairings_ships__204': [], 'date_unix__204': 1669852800, 'links_reddit_launch__204': None, 'links_patch_small__204': None, 'fairings_recovered__204': None}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-23 17:31:21,601 - INFO - ETL Job finished
+2025-04-23 17:31:49,052 - INFO - ETL Job Starting
+2025-04-23 17:31:49,052 - INFO - Extracting data from API
+2025-04-23 17:31:49,055 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 17:31:49,961 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-23 17:31:50,410 - INFO - Data ingestion successfully completed
+2025-04-23 17:31:50,416 - INFO - Cleaning and transforming launch data.
+2025-04-23 17:31:50,422 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 17:31:51,205 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-23 17:31:51,207 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 17:31:51,972 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-23 17:31:51,982 - INFO - Transformation complete.
+2025-04-23 17:31:51,982 - INFO - Loading the dataframe to the database.
+2025-04-23 17:31:52,183 - ERROR - Problem occured during data loading. (psycopg2.ProgrammingError) can't adapt type 'dict'
+[SQL: INSERT INTO spacex_launches (static_fire_date_utc, static_fire_date_unix, net, "window", success, failures, details, crew, ships, capsules, payloads, flight_number, name, date_utc, date_unix, date_local, date_precision, upcoming, auto_update, tbd, la ... 201217 characters truncated ... 204)s, %(rocket_name__204)s, %(launchpad_location__204)s, %(flickr_images__204)s, %(core_ids__204)s)]
+[parameters: {'fairings_recovered__0': False, 'date_precision__0': 'hour', 'fairings_reused__0': False, 'net__0': False, 'fairings__0': None, 'auto_update__0': True, 'links_wikipedia__0': 'https://en.wikipedia.org/wiki/DemoSat', 'ships__0': '', 'static_fire_date_unix__0': 1142553600.0, 'flight_number__0': 1, 'crew__0': '', 'links_webcast__0': 'https://www.youtube.com/watch?v=0a_00nJ_Y88', 'window__0': 0.0, 'links_presskit__0': None, 'links_reddit_media__0': None, 'static_fire_date_utc__0': '2006-03-17T00:00:00.000Z', 'links_youtube_id__0': '0a_00nJ_Y88', 'links_article__0': 'https://www.space.com/2196-spacex-inaugural-falcon-1-rocket-lost-launch.html', 'payloads__0': '5eb0e4b5b6c3bb0006eeb1e1', 'date_unix__0': 1143239400, 'fairings_recovery_attempt__0': False, 'links_reddit_campaign__0': None, 'links_reddit_recovery__0': None, 'launchpad_location__0': 'Kwajalein Atoll Omelek Island', 'links_patch_small__0': 'https://images2.imgbox.com/94/f2/NN6Ph45r_o.png', 'id__0': '5eb87cd9ffd86e000604b32a', 'core_ids__0': '5e9e289df35918033d3b2623', 'links_patch_large__0': 'https://images2.imgbox.com/5b/02/QcxHUb5V_o.png', 'fairings_ships__0': [], 'failures__0': [{'time': 33, 'altitude': None, 'reason': 'merlin engine failure'}], 'capsules__0': '', 'tbd__0': False, 'launch_library_id__0': None, 'date_utc__0': datetime.datetime(2006, 3, 24, 22, 30, tzinfo=datetime.timezone.utc), 'details__0': 'Engine failure at 33 seconds and loss of vehicle', 'success__0': False, 'upcoming__0': False, 'rocket_name__0': 'Falcon 1', 'date_local__0': '2006-03-25T10:30:00+12:00', 'links_reddit_launch__0': None, 'name__0': 'FalconSat', 'flickr_images__0': '', 'links_flickr_small__0': [], 'fairings_recovered__1': False, 'date_precision__1': 'hour', 'fairings_reused__1': False, 'net__1': False, 'fairings__1': None, 'auto_update__1': True, 'links_wikipedia__1': 'https://en.wikipedia.org/wiki/DemoSat' ... 8715 parameters truncated ... 'upcoming__203': True, 'rocket_name__203': 'Falcon Heavy', 'date_local__203': '2022-11-30T19:00:00-05:00', 'links_reddit_launch__203': None, 'name__203': 'Viasat-3 & Arcturus', 'flickr_images__203': '', 'links_flickr_small__203': [], 'fairings_recovered__204': None, 'date_precision__204': 'month', 'fairings_reused__204': None, 'net__204': False, 'fairings__204': None, 'auto_update__204': True, 'links_wikipedia__204': None, 'ships__204': '', 'static_fire_date_unix__204': None, 'flight_number__204': 203, 'crew__204': '', 'links_webcast__204': None, 'window__204': None, 'links_presskit__204': None, 'links_reddit_media__204': None, 'static_fire_date_utc__204': None, 'links_youtube_id__204': None, 'links_article__204': None, 'payloads__204': '6243b788af52800c6e91926b', 'date_unix__204': 1669852800, 'fairings_recovery_attempt__204': None, 'links_reddit_campaign__204': None, 'links_reddit_recovery__204': None, 'launchpad_location__204': 'Cape Canaveral Space Force Station Space Launch Complex 40', 'links_patch_small__204': None, 'id__204': '6243ae7daf52800c6e91925b', 'core_ids__204': '', 'links_patch_large__204': None, 'fairings_ships__204': [], 'failures__204': [], 'capsules__204': '', 'tbd__204': False, 'launch_library_id__204': None, 'date_utc__204': datetime.datetime(2022, 12, 1, 0, 0, tzinfo=datetime.timezone.utc), 'details__204': None, 'success__204': None, 'upcoming__204': True, 'rocket_name__204': 'Falcon 9', 'date_local__204': '2022-11-30T19:00:00-05:00', 'links_reddit_launch__204': None, 'name__204': 'O3b mPower 3.4', 'flickr_images__204': '', 'links_flickr_small__204': []}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-23 17:31:52,184 - INFO - ETL Job finished
+2025-04-23 17:34:11,759 - INFO - ETL Job Starting
+2025-04-23 17:34:11,760 - INFO - Extracting data from API
+2025-04-23 17:34:11,762 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 17:34:12,666 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-23 17:34:13,124 - INFO - Data ingestion successfully completed
+2025-04-23 17:34:13,130 - INFO - Cleaning and transforming launch data.
+2025-04-23 17:34:13,136 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 17:34:13,936 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-23 17:34:13,941 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 17:34:14,687 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-23 17:34:14,711 - INFO - Transformation complete.
+2025-04-23 17:34:14,712 - INFO - Loading the dataframe to the database.
+2025-04-23 17:34:14,913 - INFO - Data is successfully loaded into the database.
+2025-04-23 17:34:14,913 - INFO - ETL Job finished
+2025-04-23 18:03:09,550 - INFO - ETL Job Starting
+2025-04-23 18:03:09,550 - INFO - Extracting data from API
+2025-04-23 18:03:09,553 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 18:03:10,509 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-23 18:03:10,935 - INFO - Data ingestion successfully completed
+2025-04-23 18:03:10,941 - INFO - Cleaning and transforming launch data.
+2025-04-23 18:03:10,948 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 18:03:11,727 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-23 18:03:11,730 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 18:03:12,502 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-23 18:03:12,523 - INFO - Transformation complete.
+2025-04-23 18:03:12,524 - INFO - Loading the dataframe to the database.
+2025-04-23 18:03:12,729 - INFO - Data is successfully loaded into the database.
+2025-04-23 18:03:12,730 - INFO - ETL Job finished
+2025-04-23 18:08:56,859 - INFO - ETL Job Starting
+2025-04-23 18:08:56,859 - INFO - Extracting data from API
+2025-04-23 18:08:56,862 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 18:08:57,306 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-23 18:08:57,752 - INFO - Data ingestion successfully completed
+2025-04-23 18:08:57,758 - INFO - Cleaning and transforming launch data.
+2025-04-23 18:08:57,764 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 18:08:58,554 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-23 18:08:58,559 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 18:08:59,349 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-23 18:08:59,372 - INFO - Transformation complete.
+2025-04-23 18:08:59,372 - INFO - Loading the dataframe to the database.
+2025-04-23 18:08:59,572 - INFO - Data is successfully loaded into the database.
+2025-04-23 18:08:59,572 - INFO - ETL Job finished
+2025-04-23 18:10:51,181 - INFO - ETL Job Starting
+2025-04-23 18:10:51,181 - INFO - Extracting data from API
+2025-04-23 18:10:51,184 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 18:10:52,100 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-23 18:10:52,553 - INFO - Data ingestion successfully completed
+2025-04-23 18:10:52,563 - INFO - Cleaning and transforming launch data.
+2025-04-23 18:10:52,569 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 18:10:53,329 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-23 18:10:53,335 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 18:10:54,099 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-23 18:10:54,107 - ERROR - Error during transformation: 'time'
+2025-04-23 18:10:54,108 - INFO - Loading the dataframe to the database.
+2025-04-23 18:10:54,108 - WARNING - No data to load.
+2025-04-23 18:10:54,108 - INFO - ETL Job finished
+2025-04-23 18:12:24,060 - INFO - ETL Job Starting
+2025-04-23 18:12:24,060 - INFO - Extracting data from API
+2025-04-23 18:12:24,063 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 18:12:24,845 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-23 18:12:25,286 - INFO - Data ingestion successfully completed
+2025-04-23 18:12:25,291 - INFO - Cleaning and transforming launch data.
+2025-04-23 18:12:25,298 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 18:12:26,089 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-23 18:12:26,093 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 18:12:26,886 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-23 18:12:26,897 - ERROR - Error during transformation: 'time'
+2025-04-23 18:12:26,897 - INFO - Loading the dataframe to the database.
+2025-04-23 18:12:26,897 - WARNING - No data to load.
+2025-04-23 18:12:26,897 - INFO - ETL Job finished
+2025-04-23 18:12:38,639 - INFO - ETL Job Starting
+2025-04-23 18:12:38,639 - INFO - Extracting data from API
+2025-04-23 18:12:38,642 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 18:12:39,569 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-23 18:12:40,012 - INFO - Data ingestion successfully completed
+2025-04-23 18:12:40,018 - INFO - Cleaning and transforming launch data.
+2025-04-23 18:12:40,023 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 18:12:40,820 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-23 18:12:40,825 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 18:12:41,610 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-23 18:12:41,621 - ERROR - Error during transformation: 'str' object has no attribute 'keys'
+2025-04-23 18:12:41,622 - INFO - Loading the dataframe to the database.
+2025-04-23 18:12:41,622 - WARNING - No data to load.
+2025-04-23 18:12:41,622 - INFO - ETL Job finished
