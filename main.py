@@ -1,17 +1,15 @@
-from config import db_config, logger, url, rocketurl, launchpadurl
+from config import DB_CONFIG, logger, SPACEX_API_URL
 from extract import extract_data
-from transform import transform_data, fetch_name_detail
+from transform import transform_data
 from load import load_data
 
 
 def run_etl_job():
     logger.info('ETL Job Starting')
     try:
-        data = extract_data(url)
-        dataframe = transform_data(data)
-        cleaned_dataframe = fetch_name_detail(dataframe, 'name', 'rocket', rocketurl)
-        cleaned_dataframe = fetch_name_detail(cleaned_dataframe, 'name', 'launchpad', launchpadurl)
-        load_data(cleaned_dataframe, db_config)
+        data = extract_data(f'{SPACEX_API_URL}/v5/launches')
+        cleaned_data = transform_data(data)
+        load_data(cleaned_data, DB_CONFIG)
         
 
     except Exception as e:
