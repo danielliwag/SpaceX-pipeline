@@ -1,62 +1,82 @@
-from config import logger
-import pandas as pd
 import requests
+import pandas as pd
+import json
+from config import logger, SPACEX_API_URL
 
 
-def transform_data(dataframe):
+def fetch_lookup_maps():
     try:
-        if dataframe:
-            df = pd.json_normalize(dataframe)
-            df['launch_id'] = df['id']
-            df['name'] = df['name'].str.strip()
-            df['date_utc'] = pd.to_datetime(df['date_utc'])
-            df['success'] = df['success'].astype(bool)
-            df['links.flickr.original'] = df['links.flickr.original'].apply(lambda x: ', '.join(x))
-            df['capsules'] = df['capsules'].apply(lambda x: ', '.join(x))
-            df['payloads'] = df['payloads'].apply(lambda x: ', '.join(x))
+        rockets = requests.get(f"{SPACEX_API_URL}/v4/rockets").json()
+        launchpads = requests.get(f"{SPACEX_API_URL}/v4/launchpads").json()
 
-            cores_df = pd.json_normalize(dataframe, record_path='cores', meta= ['id'], sep='_')
-            cores_df['launch_id'] = cores_df['id']
-            cores_df.drop(columns=['id'], inplace= True)
+        rocket_map = {r['id']: r['name'] for r in rockets}
+        launchpad_map = {l['id']: l['full_name'] for l in launchpads}
 
-            failures_df = pd.json_normalize(dataframe, record_path='failures', meta=['id'], sep='_')
-            failures_df.rename(columns={'id': 'launch_id'}, inplace= True)
-
-            crew_records = []
-            for launch in dataframe:
-                if launch.get("crew"):
-                    for crew_id in launch["crew"]:
-                        crew_records.append({
-                            "launch_id": launch["id"],
-                            "crew_id": crew_id
-                        })
-            crew_df = pd.DataFrame(crew_records)
-            
-            merged_df = pd.merge(df, cores_df, on='launch_id', how='left')
-            merged_df = pd.merge(merged_df, failures_df, on='launch_id', how='left')
-            merged_df = pd.merge(merged_df, crew_df, on='launch_id', how='left')
-            return merged_df
-    
-        else:
-            logger.warning('No data to transform.')
+        return rocket_map, launchpad_map
 
     except Exception as e:
-        logger.error(f'Problem during data transformation: {e}')
+        logger.error(f"Error fetching rocket/launchpad lookups: {e}")
+        return {}, {}
 
 
-def fetch_name_detail(df, name, column_id, url):
-    name_ids = df[f'{column_id}'].unique()
-    
-    name_id_lookup = {}
-    for nid in name_ids:
-        try:
-            nid = nid.strip()
-            res = requests.get(f'{url}/{nid}')
-            res.raise_for_status()
-            name_id_lookup[nid] = res.json().get(name, None)
-        except Exception as e:
-            logger.warning(f'Launchpad ID failed: {nid} - {e}')
-            name_id_lookup[nid] = None
+def transform_data(raw_data):
+    if not raw_data:
+        logger.warning("No data received for transformation.")
+        return pd.DataFrame()
 
-    df[f'{column_id}_name'] = df[f'{column_id}'].map(name_id_lookup)
-    return df
+    try:
+        df = pd.json_normalize(raw_data)
+
+        logger.info("Cleaning and transforming launch data.")
+
+        df['name'] = df['name'].str.strip()
+        df['date_utc'] = pd.to_datetime(df['date_utc'], errors='coerce')
+        df['success'] = df['success'].astype('boolean')
+
+        # Fetch lookup maps
+        rocket_map, launchpad_map = fetch_lookup_maps()
+
+        df['rocket_name'] = df['rocket'].map(rocket_map)
+        df['launchpad_location'] = df['launchpad'].map(launchpad_map)
+
+        # Flatten nested json
+        list_columns = ['flickr_images', 'capsules', 'payloads', 'ships', 'crew', 'failures']
+        for col in list_columns:
+            full_col = 'links.flickr.original' if col == 'flickr_images' else col
+            if full_col in df.columns:
+                def safe_join(val):
+                    if isinstance(val, list):
+                        if all(isinstance(item, dict) for item in val):
+                            return ', '.join(str(item.get('id', item)) for item in val)
+                        return ', '.join(str(item) for item in val)
+                    return ''
+                
+                df[col] = df[full_col].apply(safe_join)
+                if col != full_col:
+                    df.drop(columns=[full_col], inplace=True)
+
+        def extract_core_ids(core_list):
+            if isinstance(core_list, list):
+                return ', '.join(str(c.get('core')) for c in core_list if isinstance(c, dict) and c.get('core'))
+            return ''
+
+        df['core_ids'] = df['cores'].apply(extract_core_ids)
+
+        # Drop unnecessary columns
+        drop_cols = ['rocket', 'launchpad', 'cores']
+        df.drop(columns=[col for col in drop_cols if col in df.columns], inplace=True)
+
+        # Convert all remaining dict-type columns to JSON strings
+        for col in df.columns:
+            df[col] = df[col].apply(lambda x: json.dumps(x) if isinstance(x, dict) else x)
+
+        # Convert lists of dicts to JSON strings
+        for col in df.columns:
+            df[col] = df[col].apply(lambda x: json.dumps(x) if isinstance(x, list) and any(isinstance(i, dict) for i in x) else x)
+
+        logger.info("Transformation complete.")
+        return df
+
+    except Exception as e:
+        logger.error(f"Error during transformation: {e}")
+        return pd.DataFrame()
