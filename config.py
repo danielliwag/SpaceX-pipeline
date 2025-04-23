@@ -4,11 +4,9 @@ import logging
 
 load_dotenv()
 
-url = 'https://api.spacexdata.com/v5/launches'
-rocketurl =  'https://api.spacexdata.com/v4/rockets'
-launchpadurl = 'https://api.spacexdata.com/v4/launchpads'
+SPACEX_API_URL = 'https://api.spacexdata.com'
 
-db_config = {
+DB_CONFIG = {
     'user': os.getenv('DB_USER'),
     'pass': os.getenv('DB_PASS'),
     'host': os.getenv('DB_HOST'),
