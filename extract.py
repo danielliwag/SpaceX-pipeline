@@ -5,8 +5,8 @@ from config import logger
 def extract_data(url):
     logger.info('Extracting data from API')
     try:
-        response = requests.get(url)
-        data = response.json()
+        res = requests.get(url)
+        data = res.json()
         return data
     except Exception as e:
         logger.error(f'Problem occured during data ingestion: {e}')
