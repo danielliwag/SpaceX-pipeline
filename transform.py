@@ -73,6 +73,14 @@ def transform_data(raw_data):
         # Convert lists of dicts to JSON strings
         for col in df.columns:
             df[col] = df[col].apply(lambda x: json.dumps(x) if isinstance(x, list) and any(isinstance(i, dict) for i in x) else x)
+        # Replace NaN with None so psycopg2 maps it to SQL NULL
+        df = df.where(pd.notnull(df), None)
+
+        # Ensure booleans stay booleans by removing NaN
+        bool_columns = ['fairings.reused', 'fairings.recovery_attempt', 'fairings.recovered']
+        for col in bool_columns:
+            if col in df.columns:
+                df[col] = df[col].where(pd.notnull(df[col]), None)
 
         logger.info("Transformation complete.")
         return df
