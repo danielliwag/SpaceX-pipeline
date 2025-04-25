@@ -63,13 +63,16 @@ def load_data(dataframe, DB_CONFIG):
     
     quoted_columns = ', '.join(f'"{col}"' for col in insert_columns)
 
+    update_cols = ', '.join(f'"{col}"=EXCLUDED."{col}"' for col in insert_columns)
+
     # Prepare SQL for UPSERT
     insert_query = f"""
         INSERT INTO {table_name} ({quoted_columns})
         VALUES %s
-        ON CONFLICT (id) DO NOTHING;
+        ON CONFLICT (id)
+        DO UPDATE SET {update_cols};
     """
-    
+
     try:
         conn = psycopg2.connect(
             dbname=DB_CONFIG['name'],
