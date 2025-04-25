@@ -1280,3 +1280,25 @@
 2025-04-23 18:12:41,622 - INFO - Loading the dataframe to the database.
 2025-04-23 18:12:41,622 - WARNING - No data to load.
 2025-04-23 18:12:41,622 - INFO - ETL Job finished
+2025-04-23 19:37:48,548 - INFO - ETL Job Starting
+2025-04-23 19:37:48,548 - INFO - Extracting data from API
+2025-04-23 19:37:48,551 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 19:37:49,419 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-23 19:37:49,850 - INFO - Data ingestion successfully completed
+2025-04-23 19:37:49,856 - INFO - Cleaning and transforming launch data.
+2025-04-23 19:37:49,862 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 19:37:50,619 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-23 19:37:50,621 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-23 19:37:51,390 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-23 19:37:51,411 - INFO - Transformation complete.
+2025-04-23 19:37:51,412 - INFO - Loading the dataframe to the database.
+2025-04-23 19:37:51,458 - INFO - 0 new rows found to insert.
+2025-04-23 19:37:51,458 - INFO - No new data to insert.
+2025-04-23 19:37:51,459 - INFO - ETL Job finished
+2025-04-25 16:05:08,176 - INFO - ETL Job Starting
+2025-04-25 16:05:08,176 - INFO - Extracting data from API
+2025-04-25 16:05:08,180 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 16:07:03,447 - INFO - ETL Job Starting
+2025-04-25 16:07:03,448 - INFO - Extracting data from API
+2025-04-25 16:07:03,451 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 16:08:12,899 - INFO - Data ingestion successfully completed
