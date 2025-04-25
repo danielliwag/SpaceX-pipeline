@@ -1302,3 +1302,226 @@
 2025-04-25 16:07:03,448 - INFO - Extracting data from API
 2025-04-25 16:07:03,451 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
 2025-04-25 16:08:12,899 - INFO - Data ingestion successfully completed
+2025-04-25 17:42:32,583 - INFO - ETL Job Starting
+2025-04-25 17:42:32,584 - INFO - Extracting data from API
+2025-04-25 17:42:32,587 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 17:42:33,546 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-25 17:42:33,990 - INFO - Data ingestion successfully completed
+2025-04-25 17:42:33,998 - INFO - Cleaning and transforming launch data.
+2025-04-25 17:42:34,008 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 17:42:34,373 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-25 17:42:34,375 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 17:42:35,185 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-25 17:42:35,211 - INFO - Transformation complete.
+2025-04-25 17:42:35,212 - INFO - Starting UPSERT of new data to the database.
+2025-04-25 17:42:35,268 - ERROR - UPSERT failed: syntax error at or near "window"
+LINE 2: ...static_fire_date_utc, static_fire_date_unix, net, window, su...
+                                                             ^
+
+2025-04-25 17:42:35,269 - INFO - ETL Job finished
+2025-04-25 17:43:24,229 - INFO - ETL Job Starting
+2025-04-25 17:43:24,229 - INFO - Extracting data from API
+2025-04-25 17:43:24,233 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 17:43:25,185 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-25 17:43:25,628 - INFO - Data ingestion successfully completed
+2025-04-25 17:43:25,634 - INFO - Cleaning and transforming launch data.
+2025-04-25 17:43:25,640 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 17:43:26,440 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-25 17:43:26,443 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 17:43:26,804 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-25 17:43:26,826 - INFO - Transformation complete.
+2025-04-25 17:43:26,826 - INFO - Loading the dataframe to the database.
+2025-04-25 17:43:26,874 - INFO - 0 new rows found to insert.
+2025-04-25 17:43:26,875 - INFO - No new data to insert.
+2025-04-25 17:43:26,875 - INFO - ETL Job finished
+2025-04-25 17:48:19,929 - INFO - ETL Job Starting
+2025-04-25 17:48:19,930 - INFO - Extracting data from API
+2025-04-25 17:48:19,932 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 17:48:20,969 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-25 17:48:21,403 - INFO - Data ingestion successfully completed
+2025-04-25 17:48:21,409 - INFO - Cleaning and transforming launch data.
+2025-04-25 17:48:21,415 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 17:48:22,199 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-25 17:48:22,203 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 17:48:22,984 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-25 17:48:23,012 - INFO - Transformation complete.
+2025-04-25 17:48:23,012 - INFO - Starting UPSERT of new data to the database.
+2025-04-25 17:48:23,073 - ERROR - UPSERT failed: column "fairings.reused" is of type boolean but expression is of type double precision
+LINE 3: ...,false,true,false,NULL,'5eb87cdeffd86e000604b330','NaN'::flo...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+2025-04-25 17:48:23,073 - INFO - ETL Job finished
+2025-04-25 17:52:08,235 - INFO - ETL Job Starting
+2025-04-25 17:52:08,235 - INFO - Extracting data from API
+2025-04-25 17:52:08,239 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 17:52:09,164 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-25 17:52:09,622 - INFO - Data ingestion successfully completed
+2025-04-25 17:52:09,627 - INFO - Cleaning and transforming launch data.
+2025-04-25 17:52:09,633 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 17:52:10,450 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-25 17:52:10,452 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 17:52:11,270 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-25 17:52:11,299 - INFO - Transformation complete.
+2025-04-25 17:52:11,299 - INFO - Starting UPSERT of new data to the database.
+2025-04-25 17:52:11,356 - ERROR - UPSERT failed: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+2025-04-25 17:52:11,357 - INFO - ETL Job finished
+2025-04-25 17:56:36,206 - INFO - ETL Job Starting
+2025-04-25 17:56:36,206 - INFO - Extracting data from API
+2025-04-25 17:56:36,209 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 17:56:37,250 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-25 17:56:37,689 - INFO - Data ingestion successfully completed
+2025-04-25 17:56:37,695 - INFO - Cleaning and transforming launch data.
+2025-04-25 17:56:37,701 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 17:56:38,529 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-25 17:56:38,531 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 17:56:39,351 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-25 17:56:39,382 - INFO - Transformation complete.
+2025-04-25 17:56:39,382 - INFO - Starting UPSERT of new data to the database.
+2025-04-25 17:56:39,449 - INFO - 205 rows attempted to insert with UPSERT.
+2025-04-25 17:56:39,449 - INFO - ETL Job finished
+2025-04-25 19:53:03,121 - INFO - ETL Job Starting
+2025-04-25 19:53:03,121 - INFO - Extracting data from API
+2025-04-25 19:53:03,124 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 19:53:04,360 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-25 19:53:04,784 - INFO - Data ingestion successfully completed
+2025-04-25 19:53:04,790 - INFO - Cleaning and transforming launch data.
+2025-04-25 19:53:04,796 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 19:53:05,858 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-25 19:53:05,859 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 19:53:06,911 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-25 19:53:06,943 - ERROR - Error during transformation: Must specify a fill 'value' or 'method'.
+2025-04-25 19:53:06,944 - INFO - Starting UPSERT of new data to the database.
+2025-04-25 19:53:06,944 - WARNING - No data to load.
+2025-04-25 19:53:06,944 - INFO - ETL Job finished
+2025-04-25 19:58:29,660 - INFO - ETL Job Starting
+2025-04-25 19:58:29,660 - INFO - Extracting data from API
+2025-04-25 19:58:29,663 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 19:58:31,051 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-25 19:58:31,508 - INFO - Data ingestion successfully completed
+2025-04-25 19:58:31,514 - INFO - Cleaning and transforming launch data.
+2025-04-25 19:58:31,520 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 19:58:32,598 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-25 19:58:32,601 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 19:58:33,699 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-25 19:58:33,729 - INFO - Transformation complete.
+2025-04-25 19:58:33,729 - INFO - Starting UPSERT of new data to the database.
+2025-04-25 19:58:33,801 - INFO - 205 rows attempted to insert with UPSERT.
+2025-04-25 19:58:33,802 - INFO - ETL Job finished
+2025-04-25 21:31:03,769 - INFO - ETL Job Starting
+2025-04-25 21:31:03,769 - INFO - Extracting data from API
+2025-04-25 21:31:03,772 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:31:04,702 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-25 21:31:05,297 - INFO - Data ingestion successfully completed
+2025-04-25 21:31:05,303 - INFO - Cleaning and transforming launch data.
+2025-04-25 21:31:05,309 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:31:06,415 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-25 21:31:06,418 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:31:07,561 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-25 21:31:07,592 - INFO - Transformation complete.
+2025-04-25 21:31:07,592 - INFO - Starting UPSERT of new data to the database.
+2025-04-25 21:31:07,649 - ERROR - UPSERT failed: syntax error at or near "DO"
+LINE 6:         DO UPDATE SET static_fire_date_utc = EXCLUDED.static...
+                ^
+
+2025-04-25 21:31:07,650 - INFO - ETL Job finished
+2025-04-25 21:32:44,113 - INFO - ETL Job Starting
+2025-04-25 21:32:44,113 - INFO - Extracting data from API
+2025-04-25 21:32:44,116 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:32:45,525 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-25 21:32:46,195 - INFO - Data ingestion successfully completed
+2025-04-25 21:32:46,208 - INFO - Cleaning and transforming launch data.
+2025-04-25 21:32:46,214 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:32:47,303 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-25 21:32:47,305 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:32:48,614 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-25 21:32:48,649 - INFO - Transformation complete.
+2025-04-25 21:32:48,649 - INFO - Starting UPSERT of new data to the database.
+2025-04-25 21:32:48,703 - ERROR - UPSERT failed: syntax error at or near "window"
+LINE 6: ...CLUDED.static_fire_date_unix, net = EXCLUDED.net, window = E...
+                                                             ^
+
+2025-04-25 21:32:48,704 - INFO - ETL Job finished
+2025-04-25 21:33:15,392 - INFO - ETL Job Starting
+2025-04-25 21:33:15,393 - INFO - Extracting data from API
+2025-04-25 21:33:15,396 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:33:16,638 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-25 21:33:17,121 - INFO - Data ingestion successfully completed
+2025-04-25 21:33:17,126 - INFO - Cleaning and transforming launch data.
+2025-04-25 21:33:17,132 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:33:18,298 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-25 21:33:18,302 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:33:19,560 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-25 21:33:19,593 - INFO - Transformation complete.
+2025-04-25 21:33:19,594 - INFO - Starting UPSERT of new data to the database.
+2025-04-25 21:33:19,652 - ERROR - UPSERT failed: syntax error at or near ","
+LINE 6:         DO UPDATE SET " = EXCLUDED.", s = EXCLUDED.s, t = EX...
+                                            ^
+
+2025-04-25 21:33:19,653 - INFO - ETL Job finished
+2025-04-25 21:34:16,904 - INFO - ETL Job Starting
+2025-04-25 21:34:16,904 - INFO - Extracting data from API
+2025-04-25 21:34:16,907 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:34:18,118 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-25 21:34:18,726 - INFO - Data ingestion successfully completed
+2025-04-25 21:34:18,734 - INFO - Cleaning and transforming launch data.
+2025-04-25 21:34:18,742 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:34:19,833 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-25 21:34:19,835 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:34:21,044 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-25 21:34:21,075 - INFO - Transformation complete.
+2025-04-25 21:34:21,075 - INFO - Starting UPSERT of new data to the database.
+2025-04-25 21:34:21,132 - ERROR - UPSERT failed: syntax error at or near "["
+LINE 6:         DO UPDATE SET ['" = EXCLUDED."', 's = EXCLUDED.s', '...
+                              ^
+
+2025-04-25 21:34:21,133 - INFO - ETL Job finished
+2025-04-25 21:40:09,306 - INFO - ETL Job Starting
+2025-04-25 21:40:09,306 - INFO - Extracting data from API
+2025-04-25 21:40:09,309 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:40:10,543 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-25 21:40:11,175 - INFO - Data ingestion successfully completed
+2025-04-25 21:40:11,181 - INFO - Cleaning and transforming launch data.
+2025-04-25 21:40:11,187 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:40:12,273 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-25 21:40:12,279 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:40:13,369 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-25 21:40:13,403 - INFO - Transformation complete.
+2025-04-25 21:40:13,403 - INFO - Starting UPSERT of new data to the database.
+2025-04-25 21:40:13,459 - ERROR - UPSERT failed: syntax error at or near ","
+LINE 6: ...     DO UPDATE SET EXCLUDED."static_fire_date_utc", "static_...
+                                                             ^
+
+2025-04-25 21:40:13,460 - INFO - ETL Job finished
+2025-04-25 21:43:19,851 - INFO - ETL Job Starting
+2025-04-25 21:43:19,851 - INFO - Extracting data from API
+2025-04-25 21:43:19,854 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:43:22,122 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-25 21:43:22,768 - INFO - Data ingestion successfully completed
+2025-04-25 21:43:22,774 - INFO - Cleaning and transforming launch data.
+2025-04-25 21:43:22,780 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:43:23,886 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-25 21:43:24,063 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:43:25,211 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-25 21:43:25,375 - INFO - Transformation complete.
+2025-04-25 21:43:25,376 - INFO - Starting UPSERT of new data to the database.
+2025-04-25 21:43:25,435 - ERROR - UPSERT failed: missing FROM-clause entry for table "fairings"
+LINE 6: ...h_library_id, "id"=EXCLUDED.id, "fairings.reused"=EXCLUDED.f...
+                                                             ^
+
+2025-04-25 21:43:25,436 - INFO - ETL Job finished
+2025-04-25 21:43:56,344 - INFO - ETL Job Starting
+2025-04-25 21:43:56,345 - INFO - Extracting data from API
+2025-04-25 21:43:56,347 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:43:57,750 - DEBUG - https://api.spacexdata.com:443 "GET /v5/launches HTTP/1.1" 200 None
+2025-04-25 21:43:58,238 - INFO - Data ingestion successfully completed
+2025-04-25 21:43:58,245 - INFO - Cleaning and transforming launch data.
+2025-04-25 21:43:58,250 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:43:59,378 - DEBUG - https://api.spacexdata.com:443 "GET /v4/rockets HTTP/1.1" 200 2279
+2025-04-25 21:43:59,923 - DEBUG - Starting new HTTPS connection (1): api.spacexdata.com:443
+2025-04-25 21:44:01,032 - DEBUG - https://api.spacexdata.com:443 "GET /v4/launchpads HTTP/1.1" 200 3838
+2025-04-25 21:44:01,237 - INFO - Transformation complete.
+2025-04-25 21:44:01,237 - INFO - Starting UPSERT of new data to the database.
+2025-04-25 21:44:01,311 - INFO - 205 rows attempted to insert with UPSERT.
+2025-04-25 21:44:01,311 - INFO - ETL Job finished
